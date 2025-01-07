@@ -16,7 +16,7 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "SwiftCountryKit",
-            resources: [.process("Data/countries.json")]),
+            resources: [.process("Resources/countries.json")]),
         .testTarget(
             name: "SwiftCountryKitTests",
             dependencies: ["SwiftCountryKit"]

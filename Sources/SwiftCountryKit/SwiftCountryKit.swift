@@ -11,8 +11,11 @@ public struct SwiftCountryKit {
         return countries
     }
 
-    public init() {
+    public var initCountry: Country = Country(code: "US", name: "United States", number: "+1")
+
+    public init(initCountryCode: ISOCode) {
         countries = load()
+        initCountry = findInitCountry(code: initCountryCode)
     }
 }
 
@@ -29,5 +32,9 @@ extension SwiftCountryKit {
             SCLogger.printError("decoding Failed [Country] from json")
             return []
         }
+    }
+
+    private func findInitCountry(code: ISOCode) -> Country {
+        countries.first { $0.code == code.rawValue } ?? Country(code: "US", name: "United States", number: "+1")
     }
 }
