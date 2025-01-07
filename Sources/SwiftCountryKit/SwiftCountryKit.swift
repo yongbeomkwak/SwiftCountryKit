@@ -17,7 +17,7 @@ public struct SwiftCountryKit {
         return countries
     }
 
-    init() throws {
+    public init() throws {
         countries = try load()
     }
 }
