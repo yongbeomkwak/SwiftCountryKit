@@ -3,7 +3,7 @@
 
 import Foundation
 
-public struct SwiftCountryKit {
+public struct CountryProvider {
     private let decoder = JSONDecoder()
     private var countries: [Country] = []
 
@@ -19,7 +19,7 @@ public struct SwiftCountryKit {
     }
 }
 
-extension SwiftCountryKit {
+extension CountryProvider {
     private func load() -> [Country] {
         guard let url = Bundle.module.url(forResource: "countries", withExtension: "json") else {
             SCLogger.printError("notFounded json")

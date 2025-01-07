@@ -3,7 +3,7 @@ import XCTest
 
 final class SwiftCountryKitTests: XCTestCase {
     func testExample() throws {
-        let countryKit = SwiftCountryKit(initCountryCode: .us)
+        let countryKit = CountryProvider(initCountryCode: .us)
         XCTAssertEqual(countryKit.all.count, 240)
         XCTAssertNotEqual(countryKit.all.count, 0)
     }
