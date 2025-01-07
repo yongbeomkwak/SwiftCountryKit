@@ -9,11 +9,11 @@ enum DecodeError: Error {
 }
 
 
-struct SwiftCountryKit {
+public struct SwiftCountryKit {
     private let decoder = JSONDecoder()
     private var countries: [Country] = []
 
-    var all: [Country] {
+    public var all: [Country] {
         return countries
     }
 
