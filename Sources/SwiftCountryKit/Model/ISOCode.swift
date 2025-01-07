@@ -58,7 +58,6 @@ public enum ISOCode: String {
     case dk = "DK"
     case dj = "DJ"
     case dm = "DM"
-    case `do` = "DO"
     case tl = "TL"
     case ec = "EC"
     case eg = "EG"

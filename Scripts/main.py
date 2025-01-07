@@ -62,7 +62,6 @@ Democratic Republic of the Congo        243     CD
 Denmark 45      DK
 Djibouti        253     DJ
 Dominica        1-767   DM
-Dominican Republic      1-809, 1-829, 1-849     DO
 East Timor      670     TL
 Ecuador 593     EC
 Egypt   20      EG
@@ -290,7 +289,8 @@ def generate_countires_json(lines):
 
     print(f"json result: {len(result)}")
     # JSON 파일로 저장
-    with open("countries.json", "w", encoding="utf-8") as file:
+    destination = "../Sources/SwiftCountryKit/Resources/countries.json"
+    with open(destination, "w", encoding="utf-8") as file:
         json.dump(result, file, indent=4, ensure_ascii=False)
 
 generate_countires_json(data)
