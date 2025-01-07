@@ -13,7 +13,7 @@ public struct SwiftCountryKit {
 
     public var initCountry: Country = Country(code: "US", name: "United States", number: "+1")
 
-    public init(initCountryCode: ISOCode) {
+    public init(initCountryCode: ISOCode = .us) {
         countries = load()
         initCountry = findInitCountry(code: initCountryCode)
     }
