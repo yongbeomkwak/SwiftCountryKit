@@ -3,12 +3,6 @@
 
 import Foundation
 
-enum DecodeError: Error {
-    case notFounded
-    case decodingFail
-}
-
-
 public struct SwiftCountryKit {
     private let decoder = JSONDecoder()
     private var countries: [Country] = []
@@ -17,21 +11,23 @@ public struct SwiftCountryKit {
         return countries
     }
 
-    public init() throws {
-        countries = try load()
+    public init() {
+        countries = load()
     }
 }
 
 extension SwiftCountryKit {
-    private func load() throws -> [Country] {
+    private func load() -> [Country] {
         guard let url = Bundle.module.url(forResource: "countries", withExtension: "json") else {
             SCLogger.printError("notFounded json")
-            throw DecodeError.notFounded }
+            return []
+        }
         do {
             let data = try Data(contentsOf: url)
             return try decoder.decode([Country].self, from: data)
         } catch {
-            throw DecodeError.decodingFail
+            SCLogger.printError("decoding Failed [Country] from json")
+            return []
         }
     }
 }
