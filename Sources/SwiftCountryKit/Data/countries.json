@@ -1,0 +1,902 @@
+[
+    {
+        "name": "Afghanistan",
+        "code": "AF",
+        "number": "+93"
+    },
+    {
+        "name": "Albania",
+        "code": "AL",
+        "number": "+355"
+    },
+    {
+        "name": "Algeria",
+        "code": "DZ",
+        "number": "+213"
+    },
+    {
+        "name": "Andorra",
+        "code": "AD",
+        "number": "+376"
+    },
+    {
+        "name": "Angola",
+        "code": "AO",
+        "number": "+244"
+    },
+    {
+        "name": "Anguilla",
+        "code": "AI",
+        "number": "+1-264"
+    },
+    {
+        "name": "Antarctica",
+        "code": "AQ",
+        "number": "+672"
+    },
+    {
+        "name": "Argentina",
+        "code": "AR",
+        "number": "+54"
+    },
+    {
+        "name": "Armenia",
+        "code": "AM",
+        "number": "+374"
+    },
+    {
+        "name": "Aruba",
+        "code": "AW",
+        "number": "+297"
+    },
+    {
+        "name": "Australia",
+        "code": "AU",
+        "number": "+61"
+    },
+    {
+        "name": "Austria",
+        "code": "AT",
+        "number": "+43"
+    },
+    {
+        "name": "Azerbaijan",
+        "code": "AZ",
+        "number": "+994"
+    },
+    {
+        "name": "Bahamas",
+        "code": "BS",
+        "number": "+1-242"
+    },
+    {
+        "name": "Bahrain",
+        "code": "BH",
+        "number": "+973"
+    },
+    {
+        "name": "Bangladesh",
+        "code": "BD",
+        "number": "+880"
+    },
+    {
+        "name": "Barbados",
+        "code": "BB",
+        "number": "+1-246"
+    },
+    {
+        "name": "Belarus",
+        "code": "BY",
+        "number": "+375"
+    },
+    {
+        "name": "Belgium",
+        "code": "BE",
+        "number": "+32"
+    },
+    {
+        "name": "Belize",
+        "code": "BZ",
+        "number": "+501"
+    },
+    {
+        "name": "Benin",
+        "code": "BJ",
+        "number": "+229"
+    },
+    {
+        "name": "Bermuda",
+        "code": "BM",
+        "number": "+1-441"
+    },
+    {
+        "name": "Bhutan",
+        "code": "BT",
+        "number": "+975"
+    },
+    {
+        "name": "Bolivia",
+        "code": "BO",
+        "number": "+591"
+    },
+    {
+        "name": "Botswana",
+        "code": "BW",
+        "number": "+267"
+    },
+    {
+        "name": "Brazil",
+        "code": "BR",
+        "number": "+55"
+    },
+    {
+        "name": "Brunei",
+        "code": "BN",
+        "number": "+673"
+    },
+    {
+        "name": "Bulgaria",
+        "code": "BG",
+        "number": "+359"
+    },
+    {
+        "name": "Burundi",
+        "code": "BI",
+        "number": "+257"
+    },
+    {
+        "name": "Cambodia",
+        "code": "KH",
+        "number": "+855"
+    },
+    {
+        "name": "Cameroon",
+        "code": "CM",
+        "number": "+237"
+    },
+    {
+        "name": "Canada",
+        "code": "CA",
+        "number": "+1"
+    },
+    {
+        "name": "Chad",
+        "code": "TD",
+        "number": "+235"
+    },
+    {
+        "name": "Chile",
+        "code": "CL",
+        "number": "+56"
+    },
+    {
+        "name": "China",
+        "code": "CN",
+        "number": "+86"
+    },
+    {
+        "name": "Colombia",
+        "code": "CO",
+        "number": "+57"
+    },
+    {
+        "name": "Comoros",
+        "code": "KM",
+        "number": "+269"
+    },
+    {
+        "name": "Croatia",
+        "code": "HR",
+        "number": "+385"
+    },
+    {
+        "name": "Cuba",
+        "code": "CU",
+        "number": "+53"
+    },
+    {
+        "name": "Curacao",
+        "code": "CW",
+        "number": "+599"
+    },
+    {
+        "name": "Cyprus",
+        "code": "CY",
+        "number": "+357"
+    },
+    {
+        "name": "Denmark",
+        "code": "DK",
+        "number": "+45"
+    },
+    {
+        "name": "Djibouti",
+        "code": "DJ",
+        "number": "+253"
+    },
+    {
+        "name": "Dominica",
+        "code": "DM",
+        "number": "+1-767"
+    },
+    {
+        "name": "Ecuador",
+        "code": "EC",
+        "number": "+593"
+    },
+    {
+        "name": "Egypt",
+        "code": "EG",
+        "number": "+20"
+    },
+    {
+        "name": "Eritrea",
+        "code": "ER",
+        "number": "+291"
+    },
+    {
+        "name": "Estonia",
+        "code": "EE",
+        "number": "+372"
+    },
+    {
+        "name": "Ethiopia",
+        "code": "ET",
+        "number": "+251"
+    },
+    {
+        "name": "Fiji",
+        "code": "FJ",
+        "number": "+679"
+    },
+    {
+        "name": "Finland",
+        "code": "FI",
+        "number": "+358"
+    },
+    {
+        "name": "France",
+        "code": "FR",
+        "number": "+33"
+    },
+    {
+        "name": "Gabon",
+        "code": "GA",
+        "number": "+241"
+    },
+    {
+        "name": "Gambia",
+        "code": "GM",
+        "number": "+220"
+    },
+    {
+        "name": "Georgia",
+        "code": "GE",
+        "number": "+995"
+    },
+    {
+        "name": "Germany",
+        "code": "DE",
+        "number": "+49"
+    },
+    {
+        "name": "Ghana",
+        "code": "GH",
+        "number": "+233"
+    },
+    {
+        "name": "Gibraltar",
+        "code": "GI",
+        "number": "+350"
+    },
+    {
+        "name": "Greece",
+        "code": "GR",
+        "number": "+30"
+    },
+    {
+        "name": "Greenland",
+        "code": "GL",
+        "number": "+299"
+    },
+    {
+        "name": "Grenada",
+        "code": "GD",
+        "number": "+1-473"
+    },
+    {
+        "name": "Guam",
+        "code": "GU",
+        "number": "+1-671"
+    },
+    {
+        "name": "Guatemala",
+        "code": "GT",
+        "number": "+502"
+    },
+    {
+        "name": "Guernsey",
+        "code": "GG",
+        "number": "+44-1481"
+    },
+    {
+        "name": "Guinea",
+        "code": "GN",
+        "number": "+224"
+    },
+    {
+        "name": "Guinea-Bissau",
+        "code": "GW",
+        "number": "+245"
+    },
+    {
+        "name": "Guyana",
+        "code": "GY",
+        "number": "+592"
+    },
+    {
+        "name": "Haiti",
+        "code": "HT",
+        "number": "+509"
+    },
+    {
+        "name": "Honduras",
+        "code": "HN",
+        "number": "+504"
+    },
+    {
+        "name": "Hungary",
+        "code": "HU",
+        "number": "+36"
+    },
+    {
+        "name": "Iceland",
+        "code": "IS",
+        "number": "+354"
+    },
+    {
+        "name": "India",
+        "code": "IN",
+        "number": "+91"
+    },
+    {
+        "name": "Indonesia",
+        "code": "ID",
+        "number": "+62"
+    },
+    {
+        "name": "Iran",
+        "code": "IR",
+        "number": "+98"
+    },
+    {
+        "name": "Iraq",
+        "code": "IQ",
+        "number": "+964"
+    },
+    {
+        "name": "Ireland",
+        "code": "IE",
+        "number": "+353"
+    },
+    {
+        "name": "Israel",
+        "code": "IL",
+        "number": "+972"
+    },
+    {
+        "name": "Italy",
+        "code": "IT",
+        "number": "+39"
+    },
+    {
+        "name": "Jamaica",
+        "code": "JM",
+        "number": "+1-876"
+    },
+    {
+        "name": "Japan",
+        "code": "JP",
+        "number": "+81"
+    },
+    {
+        "name": "Jersey",
+        "code": "JE",
+        "number": "+44-1534"
+    },
+    {
+        "name": "Jordan",
+        "code": "JO",
+        "number": "+962"
+    },
+    {
+        "name": "Kazakhstan",
+        "code": "KZ",
+        "number": "+7"
+    },
+    {
+        "name": "Kenya",
+        "code": "KE",
+        "number": "+254"
+    },
+    {
+        "name": "Kiribati",
+        "code": "KI",
+        "number": "+686"
+    },
+    {
+        "name": "Kosovo",
+        "code": "XK",
+        "number": "+383"
+    },
+    {
+        "name": "Kuwait",
+        "code": "KW",
+        "number": "+965"
+    },
+    {
+        "name": "Kyrgyzstan",
+        "code": "KG",
+        "number": "+996"
+    },
+    {
+        "name": "Laos",
+        "code": "LA",
+        "number": "+856"
+    },
+    {
+        "name": "Latvia",
+        "code": "LV",
+        "number": "+371"
+    },
+    {
+        "name": "Lebanon",
+        "code": "LB",
+        "number": "+961"
+    },
+    {
+        "name": "Lesotho",
+        "code": "LS",
+        "number": "+266"
+    },
+    {
+        "name": "Liberia",
+        "code": "LR",
+        "number": "+231"
+    },
+    {
+        "name": "Libya",
+        "code": "LY",
+        "number": "+218"
+    },
+    {
+        "name": "Liechtenstein",
+        "code": "LI",
+        "number": "+423"
+    },
+    {
+        "name": "Lithuania",
+        "code": "LT",
+        "number": "+370"
+    },
+    {
+        "name": "Luxembourg",
+        "code": "LU",
+        "number": "+352"
+    },
+    {
+        "name": "Macau",
+        "code": "MO",
+        "number": "+853"
+    },
+    {
+        "name": "Macedonia",
+        "code": "MK",
+        "number": "+389"
+    },
+    {
+        "name": "Madagascar",
+        "code": "MG",
+        "number": "+261"
+    },
+    {
+        "name": "Malawi",
+        "code": "MW",
+        "number": "+265"
+    },
+    {
+        "name": "Malaysia",
+        "code": "MY",
+        "number": "+60"
+    },
+    {
+        "name": "Maldives",
+        "code": "MV",
+        "number": "+960"
+    },
+    {
+        "name": "Mali",
+        "code": "ML",
+        "number": "+223"
+    },
+    {
+        "name": "Malta",
+        "code": "MT",
+        "number": "+356"
+    },
+    {
+        "name": "Mauritania",
+        "code": "MR",
+        "number": "+222"
+    },
+    {
+        "name": "Mauritius",
+        "code": "MU",
+        "number": "+230"
+    },
+    {
+        "name": "Mayotte",
+        "code": "YT",
+        "number": "+262"
+    },
+    {
+        "name": "Mexico",
+        "code": "MX",
+        "number": "+52"
+    },
+    {
+        "name": "Micronesia",
+        "code": "FM",
+        "number": "+691"
+    },
+    {
+        "name": "Moldova",
+        "code": "MD",
+        "number": "+373"
+    },
+    {
+        "name": "Monaco",
+        "code": "MC",
+        "number": "+377"
+    },
+    {
+        "name": "Mongolia",
+        "code": "MN",
+        "number": "+976"
+    },
+    {
+        "name": "Montenegro",
+        "code": "ME",
+        "number": "+382"
+    },
+    {
+        "name": "Montserrat",
+        "code": "MS",
+        "number": "+1-664"
+    },
+    {
+        "name": "Morocco",
+        "code": "MA",
+        "number": "+212"
+    },
+    {
+        "name": "Mozambique",
+        "code": "MZ",
+        "number": "+258"
+    },
+    {
+        "name": "Myanmar",
+        "code": "MM",
+        "number": "+95"
+    },
+    {
+        "name": "Namibia",
+        "code": "NA",
+        "number": "+264"
+    },
+    {
+        "name": "Nauru",
+        "code": "NR",
+        "number": "+674"
+    },
+    {
+        "name": "Nepal",
+        "code": "NP",
+        "number": "+977"
+    },
+    {
+        "name": "Netherlands",
+        "code": "NL",
+        "number": "+31"
+    },
+    {
+        "name": "Nicaragua",
+        "code": "NI",
+        "number": "+505"
+    },
+    {
+        "name": "Niger",
+        "code": "NE",
+        "number": "+227"
+    },
+    {
+        "name": "Nigeria",
+        "code": "NG",
+        "number": "+234"
+    },
+    {
+        "name": "Niue",
+        "code": "NU",
+        "number": "+683"
+    },
+    {
+        "name": "Norway",
+        "code": "NO",
+        "number": "+47"
+    },
+    {
+        "name": "Oman",
+        "code": "OM",
+        "number": "+968"
+    },
+    {
+        "name": "Pakistan",
+        "code": "PK",
+        "number": "+92"
+    },
+    {
+        "name": "Palau",
+        "code": "PW",
+        "number": "+680"
+    },
+    {
+        "name": "Palestine",
+        "code": "PS",
+        "number": "+970"
+    },
+    {
+        "name": "Panama",
+        "code": "PA",
+        "number": "+507"
+    },
+    {
+        "name": "Paraguay",
+        "code": "PY",
+        "number": "+595"
+    },
+    {
+        "name": "Peru",
+        "code": "PE",
+        "number": "+51"
+    },
+    {
+        "name": "Philippines",
+        "code": "PH",
+        "number": "+63"
+    },
+    {
+        "name": "Pitcairn",
+        "code": "PN",
+        "number": "+64"
+    },
+    {
+        "name": "Poland",
+        "code": "PL",
+        "number": "+48"
+    },
+    {
+        "name": "Portugal",
+        "code": "PT",
+        "number": "+351"
+    },
+    {
+        "name": "Qatar",
+        "code": "QA",
+        "number": "+974"
+    },
+    {
+        "name": "Reunion",
+        "code": "RE",
+        "number": "+262"
+    },
+    {
+        "name": "Romania",
+        "code": "RO",
+        "number": "+40"
+    },
+    {
+        "name": "Russia",
+        "code": "RU",
+        "number": "+7"
+    },
+    {
+        "name": "Rwanda",
+        "code": "RW",
+        "number": "+250"
+    },
+    {
+        "name": "Samoa",
+        "code": "WS",
+        "number": "+685"
+    },
+    {
+        "name": "Senegal",
+        "code": "SN",
+        "number": "+221"
+    },
+    {
+        "name": "Serbia",
+        "code": "RS",
+        "number": "+381"
+    },
+    {
+        "name": "Seychelles",
+        "code": "SC",
+        "number": "+248"
+    },
+    {
+        "name": "Singapore",
+        "code": "SG",
+        "number": "+65"
+    },
+    {
+        "name": "Slovakia",
+        "code": "SK",
+        "number": "+421"
+    },
+    {
+        "name": "Slovenia",
+        "code": "SI",
+        "number": "+386"
+    },
+    {
+        "name": "Somalia",
+        "code": "SO",
+        "number": "+252"
+    },
+    {
+        "name": "Spain",
+        "code": "ES",
+        "number": "+34"
+    },
+    {
+        "name": "Sudan",
+        "code": "SD",
+        "number": "+249"
+    },
+    {
+        "name": "Suriname",
+        "code": "SR",
+        "number": "+597"
+    },
+    {
+        "name": "Swaziland",
+        "code": "SZ",
+        "number": "+268"
+    },
+    {
+        "name": "Sweden",
+        "code": "SE",
+        "number": "+46"
+    },
+    {
+        "name": "Switzerland",
+        "code": "CH",
+        "number": "+41"
+    },
+    {
+        "name": "Syria",
+        "code": "SY",
+        "number": "+963"
+    },
+    {
+        "name": "Taiwan",
+        "code": "TW",
+        "number": "+886"
+    },
+    {
+        "name": "Tajikistan",
+        "code": "TJ",
+        "number": "+992"
+    },
+    {
+        "name": "Tanzania",
+        "code": "TZ",
+        "number": "+255"
+    },
+    {
+        "name": "Thailand",
+        "code": "TH",
+        "number": "+66"
+    },
+    {
+        "name": "Togo",
+        "code": "TG",
+        "number": "+228"
+    },
+    {
+        "name": "Tokelau",
+        "code": "TK",
+        "number": "+690"
+    },
+    {
+        "name": "Tonga",
+        "code": "TO",
+        "number": "+676"
+    },
+    {
+        "name": "Tunisia",
+        "code": "TN",
+        "number": "+216"
+    },
+    {
+        "name": "Turkey",
+        "code": "TR",
+        "number": "+90"
+    },
+    {
+        "name": "Turkmenistan",
+        "code": "TM",
+        "number": "+993"
+    },
+    {
+        "name": "Tuvalu",
+        "code": "TV",
+        "number": "+688"
+    },
+    {
+        "name": "Uganda",
+        "code": "UG",
+        "number": "+256"
+    },
+    {
+        "name": "Ukraine",
+        "code": "UA",
+        "number": "+380"
+    },
+    {
+        "name": "Uruguay",
+        "code": "UY",
+        "number": "+598"
+    },
+    {
+        "name": "Uzbekistan",
+        "code": "UZ",
+        "number": "+998"
+    },
+    {
+        "name": "Vanuatu",
+        "code": "VU",
+        "number": "+678"
+    },
+    {
+        "name": "Vatican",
+        "code": "VA",
+        "number": "+379"
+    },
+    {
+        "name": "Venezuela",
+        "code": "VE",
+        "number": "+58"
+    },
+    {
+        "name": "Vietnam",
+        "code": "VN",
+        "number": "+84"
+    },
+    {
+        "name": "Yemen",
+        "code": "YE",
+        "number": "+967"
+    },
+    {
+        "name": "Zambia",
+        "code": "ZM",
+        "number": "+260"
+    },
+    {
+        "name": "Zimbabwe",
+        "code": "ZW",
+        "number": "+263"
+    }
+]
