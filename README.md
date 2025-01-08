@@ -288,7 +288,9 @@ provider.allCallingCodes
 ## Contribution
 
 If you’d like to add data for a new country or improve the package, here’s how you can contribute:
-	1.	Pull Request
-	•	Submit a PR to add new data or propose improvements.
-	2.	Email
-	•	Contact us at [email](yongbeomkwak@gmail.com) to request new country data or report issues.
+
+1. Pull Request
+- Submit a PR to add new data or propose improvements.
+
+2. Email
+- Contact us at [email](yongbeomkwak@gmail.com) to request new country data or report issues.
