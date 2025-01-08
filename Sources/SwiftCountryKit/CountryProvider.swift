@@ -7,7 +7,11 @@ public struct CountryProvider {
     private let decoder = JSONDecoder()
     private var dict: [String : String] = [:]
 
-    public var callingCodes: [String] {
+    public var allCallingCodeWithISO: [(String, String)] {
+        return dict.sorted(by: { $0.key < $1.key })
+    }
+
+    public var allCallingCodes: [String] {
         return dict.values.sorted()
     }
 
@@ -15,8 +19,8 @@ public struct CountryProvider {
         dict = load()
     }
 
-    public func find(_ iSOCode: String) -> String? {
-        dict[iSOCode]
+    public func find(_ ISOCode: String) -> String {
+        dict[ISOCode] ?? "+1"
     }
 }
 
