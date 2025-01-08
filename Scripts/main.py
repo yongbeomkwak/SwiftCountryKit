@@ -252,9 +252,9 @@ def generate_swift_Dict(input_string):
     
     for line in lines:
         parts = line.split()
-        code = parts[-1]  # 마지막 부분을 case로 사용
-        number = parts[-2]
-        result.append(f"    \"{code}\" :  \"+{number}\",\n")
+        count = len(parts)
+        country_name, code, iso = " ".join(parts[:count-2]), parts[count-2], parts[count-1]
+        result.append(f"    \"{iso}\" :  \"+{code}\",\n")
 
     result.append("]")
 
@@ -265,29 +265,17 @@ print(convert_data)
 
 print("=========================================")
 
-# # 데이터를 \n으로 구분하여 처리
+def generate_read_me_content(input_string):
+    lines = input_string
+    result = ["| Country | ISO Code | Calling Code |\n","|:-----------------:|:--------:|:------------:|\n"]
+    
+    for line in lines:
+        parts = line.split()
+        count = len(parts)
+        country_name, code, iso = " ".join(parts[:count-2]), parts[count-2], parts[count-1]
+        result.append(f"| {country_name} | {iso} | +{code} |\n")
 
+    return "".join(result)
 
-
-# def generate_countires_json(lines):
-#     result = []
-
-#     for line in lines:
-#         # 각 라인을 공백 기준으로 분리
-#         parts = line.split()
-#         count = len(parts)
-#         country_name, number, code = " ".join(parts[:count-2]), parts[count-2], parts[count-1]
-#         result.append({
-#                 "name": country_name,
-#                 "code": code,
-#                 "number": f"+{number}"
-#         })
-           
-
-#     print(f"json result: {len(result)}")
-#     # JSON 파일로 저장
-#     destination = "../Sources/SwiftCountryKit/Resources/countries.json"
-#     with open(destination, "w", encoding="utf-8") as file:
-#         json.dump(result, file, indent=4, ensure_ascii=False)
-
-# generate_countires_json(data)
+read_me = generate_read_me_content(data)
+print(read_me)
