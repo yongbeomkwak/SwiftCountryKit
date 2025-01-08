@@ -246,51 +246,48 @@ Zimbabwe        263     ZW
 
 data = input_data.strip().split('\n')
 
-def generate_swift_enum(input_string):
+def generate_swift_Dict(input_string):
     lines = input_string
-    cases = []
+    result = ["return [\n"]
     
     for line in lines:
         parts = line.split()
         code = parts[-1]  # 마지막 부분을 case로 사용
-        cases.append(f"    case {code.lower()} = \"{code}\"")
+        number = parts[-2]
+        result.append(f"    \"{code}\" :  \"+{number}\",\n")
 
-    enum_definition = """enum ISOCode: String {\n"""
-    enum_definition += "\n".join(cases)
-    enum_definition += "\n}"
+    result.append("]")
 
-    print(f"enum result: {len(lines)}")
-    
-    return enum_definition
+    return "".join(result)
 
-swift_enum_code = generate_swift_enum(data)
-print(swift_enum_code)
+convert_data = generate_swift_Dict(data)
+print(convert_data)
 
 print("=========================================")
 
-# 데이터를 \n으로 구분하여 처리
+# # 데이터를 \n으로 구분하여 처리
 
 
 
-def generate_countires_json(lines):
-    result = []
+# def generate_countires_json(lines):
+#     result = []
 
-    for line in lines:
-        # 각 라인을 공백 기준으로 분리
-        parts = line.split()
-        count = len(parts)
-        country_name, number, code = " ".join(parts[:count-2]), parts[count-2], parts[count-1]
-        result.append({
-                "name": country_name,
-                "code": code,
-                "number": f"+{number}"
-        })
+#     for line in lines:
+#         # 각 라인을 공백 기준으로 분리
+#         parts = line.split()
+#         count = len(parts)
+#         country_name, number, code = " ".join(parts[:count-2]), parts[count-2], parts[count-1]
+#         result.append({
+#                 "name": country_name,
+#                 "code": code,
+#                 "number": f"+{number}"
+#         })
            
 
-    print(f"json result: {len(result)}")
-    # JSON 파일로 저장
-    destination = "../Sources/SwiftCountryKit/Resources/countries.json"
-    with open(destination, "w", encoding="utf-8") as file:
-        json.dump(result, file, indent=4, ensure_ascii=False)
+#     print(f"json result: {len(result)}")
+#     # JSON 파일로 저장
+#     destination = "../Sources/SwiftCountryKit/Resources/countries.json"
+#     with open(destination, "w", encoding="utf-8") as file:
+#         json.dump(result, file, indent=4, ensure_ascii=False)
 
-generate_countires_json(data)
+# generate_countires_json(data)
