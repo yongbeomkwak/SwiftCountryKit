@@ -10,7 +10,7 @@ With a simple API, you can easily retrieve the Calling Code for a specific count
 - **Access Calling Code Data**  
   - Includes Calling Codes for around 239 countries and regions.
 - **Lookup a Specific Country's Calling Code**  
-  - Retrieve the Calling Code for a country by providing its name.
+  - Retrieve the Calling Code for a country by providing ISOCode.
 
 ---
 
