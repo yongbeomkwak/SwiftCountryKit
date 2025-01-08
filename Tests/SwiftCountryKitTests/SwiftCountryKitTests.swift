@@ -3,7 +3,7 @@ import XCTest
 
 final class SwiftCountryKitTests: XCTestCase {
     func testExample() throws {
-        let countryKit = CountryProvider(initCountryCode: .us)
+        let countryKit = CountryProvider()
         let allID = Locale.availableIdentifiers.sorted().count
 
         print(allID)
@@ -12,7 +12,7 @@ final class SwiftCountryKitTests: XCTestCase {
 //            print(id)
 //        }
 
-        XCTAssertEqual(countryKit.all.count, 240)
-        XCTAssertNotEqual(countryKit.all.count, 0)
+        XCTAssertEqual(countryKit.callingCodes.count, 239)
+        XCTAssertNotEqual(countryKit.find("US"), "+1")
     }
 }
