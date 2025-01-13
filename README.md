@@ -31,6 +31,7 @@ dependencies: [
 public struct Country {
     let ISOCode: String
     let callingCode: String
+    var image: UIImage? // flag image
 }
 ```
 
