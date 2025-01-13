@@ -45,7 +45,7 @@ let provider = CountryProvider()
 // Get the Calling Code for a specific country by its ISO code
 provider.find("US")
 
-// Get a list of all (ISOCode, Calling Code) 
+// Get a list of all Country
 provider.allCountries
 
 // Get a list of all Calling Codes
