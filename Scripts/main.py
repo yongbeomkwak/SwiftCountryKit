@@ -6,34 +6,34 @@ input_data = """
 Afghanistan 93      AF
 Albania 355     AL
 Algeria 213     DZ
-American Samoa  1-684   AS
+American Samoa  1   AS
 Andorra 376     AD
 Angola  244     AO
-Anguilla        1-264   AI
+Anguilla        1   AI
 Antarctica      672     AQ
-Antigua and Barbuda     1-268   AG
+Antigua and Barbuda     1   AG
 Argentina       54      AR
 Armenia 374     AM
 Aruba   297     AW
 Australia       61      AU
 Austria 43      AT
 Azerbaijan      994     AZ
-Bahamas 1-242   BS
+Bahamas 1   BS
 Bahrain 973     BH
 Bangladesh      880     BD
-Barbados        1-246   BB
+Barbados        1   BB
 Belarus 375     BY
 Belgium 32      BE
 Belize  501     BZ
 Benin   229     BJ
-Bermuda 1-441   BM
+Bermuda 1   BM
 Bhutan  975     BT
 Bolivia 591     BO
 Bosnia and Herzegovina 387     BA
 Botswana        267     BW
 Brazil  55      BR
 British Indian Ocean Territory  246     IO
-British Virgin Islands  1-284   VG
+British Virgin Islands  1   VG
 Brunei  673     BN
 Bulgaria        359     BG
 Burkina Faso    226     BF
@@ -42,7 +42,7 @@ Cambodia        855     KH
 Cameroon        237     CM
 Canada  1       CA
 Cape Verde      238     CV
-Cayman Islands  1-345   KY
+Cayman Islands  1   KY
 Central African Republic        236     CF
 Chad    235     TD
 Chile   56      CL
@@ -61,7 +61,8 @@ Czech Republic  420     CZ
 Democratic Republic of the Congo        243     CD
 Denmark 45      DK
 Djibouti        253     DJ
-Dominica        1-767   DM
+Dominica        1   DM
+Dominican Republic 1 DO
 East Timor      670     TL
 Ecuador 593     EC
 Egypt   20      EG
@@ -84,10 +85,10 @@ Ghana   233     GH
 Gibraltar       350     GI
 Greece  30      GR
 Greenland       299     GL
-Grenada 1-473   GD
-Guam    1-671   GU
+Grenada 1   GD
+Guam    1   GU
 Guatemala       502     GT
-Guernsey        44-1481 GG
+Guernsey        44 GG
 Guinea  224     GN
 Guinea-Bissau   245     GW
 Guyana  592     GY
@@ -105,9 +106,9 @@ Isle of Man     44-1624 IM
 Israel  972     IL
 Italy   39      IT
 Ivory Coast     225     CI
-Jamaica 1-876   JM
+Jamaica 1   JM
 Japan   81      JP
-Jersey  44-1534 JE
+Jersey  44 JE
 Jordan  962     JO
 Kazakhstan      7       KZ
 Kenya   254     KE
@@ -142,7 +143,7 @@ Moldova 373     MD
 Monaco  377     MC
 Mongolia        976     MN
 Montenegro      382     ME
-Montserrat      1-664   MS
+Montserrat      1   MS
 Morocco 212     MA
 Mozambique      258     MZ
 Myanmar 95      MM
@@ -150,7 +151,6 @@ Namibia 264     NA
 Nauru   674     NR
 Nepal   977     NP
 Netherlands     31      NL
-Netherlands Antilles    599     AN
 New Caledonia   687     NC
 New Zealand     64      NZ
 Nicaragua       505     NI
@@ -158,7 +158,7 @@ Niger   227     NE
 Nigeria 234     NG
 Niue    683     NU
 North Korea     850     KP
-Northern Mariana Islands        1-670   MP
+Northern Mariana Islands        1   MP
 Norway  47      NO
 Oman    968     OM
 Pakistan        92      PK
@@ -172,7 +172,7 @@ Philippines     63      PH
 Pitcairn        64      PN
 Poland  48      PL
 Portugal        351     PT
-Puerto Rico     1-787, 1-939    PR
+Puerto Rico     1    PR
 Qatar   974     QA
 Republic of the Congo   242     CG
 Reunion 262     RE
@@ -181,11 +181,11 @@ Russia  7       RU
 Rwanda  250     RW
 Saint Barthelemy        590     BL
 Saint Helena    290     SH
-Saint Kitts and Nevis   1-869   KN
-Saint Lucia     1-758   LC
+Saint Kitts and Nevis   1   KN
+Saint Lucia     1   LC
 Saint Martin    590     MF
 Saint Pierre and Miquelon       508     PM
-Saint Vincent and the Grenadines        1-784   VC
+Saint Vincent and the Grenadines        1   VC
 Samoa   685     WS
 San Marino      378     SM
 Sao Tome and Principe   239     ST
@@ -195,7 +195,7 @@ Serbia  381     RS
 Seychelles      248     SC
 Sierra Leone    232     SL
 Singapore       65      SG
-Sint Maarten    1-721   SX
+Sint Maarten    1   SX
 Slovakia        421     SK
 Slovenia        386     SI
 Solomon Islands 677     SB
@@ -219,13 +219,13 @@ Thailand        66      TH
 Togo    228     TG
 Tokelau 690     TK
 Tonga   676     TO
-Trinidad and Tobago     1-868   TT
+Trinidad and Tobago     1   TT
 Tunisia 216     TN
 Turkey  90      TR
 Turkmenistan    993     TM
-Turks and Caicos Islands        1-649   TC
+Turks and Caicos Islands        1   TC
 Tuvalu  688     TV
-U.S. Virgin Islands     1-340   VI
+U.S. Virgin Islands     1   VI
 Uganda  256     UG
 Ukraine 380     UA
 United Arab Emirates    971     AE
@@ -244,7 +244,7 @@ Zambia  260     ZM
 Zimbabwe        263     ZW
 """
 
-data = input_data.strip().split('\n')
+data = sorted(input_data.strip().split('\n'), key= lambda x: x.split()[-1])
 
 def generate_swift_Dict(input_string):
     lines = input_string
@@ -279,3 +279,32 @@ def generate_read_me_content(input_string):
 
 read_me = generate_read_me_content(data)
 print(read_me)
+
+def check_diff():
+    # 디렉토리 경로
+    directory_path = "../Sources/SwiftCountryKit/Resources/Countries"
+
+    # 파일 이름 가져오기
+    file_names = os.listdir(directory_path)
+
+    # 결과 출력
+
+    arr = []
+
+    for file in file_names:
+        arr.append(file.split(".")[0])
+
+    codes = []
+
+    for d in data:
+        codes.append(d.split()[-1])
+
+    count = 0 
+    for image in arr:
+        if image not in codes:
+            print(f"Not Code: {image}")
+            count = count + 1 
+
+    print(len(arr),len(codes), count)
+
+# check_diff()
