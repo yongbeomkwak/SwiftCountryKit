@@ -151,7 +151,7 @@ provider.allCallingCodes
 | Indonesia | ID | +62 |
 | Ireland | IE | +353 |
 | Israel | IL | +972 |
-| Isle of Man | IM | +44-1624 |
+| Isle of Man | IM | +44 |
 | India | IN | +91 |
 | British Indian Ocean Territory | IO | +246 |
 | Iraq | IQ | +964 |

@@ -102,7 +102,7 @@ Indonesia       62      ID
 Iran    98      IR
 Iraq    964     IQ
 Ireland 353     IE
-Isle of Man     44-1624 IM
+Isle of Man     44 IM
 Israel  972     IL
 Italy   39      IT
 Ivory Coast     225     CI
@@ -254,7 +254,7 @@ def generate_swift_Dict(input_string):
         parts = line.split()
         count = len(parts)
         country_name, code, iso = " ".join(parts[:count-2]), parts[count-2], parts[count-1]
-        result.append(f"    \"{iso}\" :  \"+{code}\",\n")
+        result.append(f"\"{iso}\" :  Country(ISOCode: \"{iso}\", callingCode:\"+{code}\"),\n")
 
     result.append("]")
 
