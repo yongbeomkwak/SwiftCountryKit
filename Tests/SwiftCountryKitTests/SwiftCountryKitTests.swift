@@ -3,9 +3,17 @@ import XCTest
 
 final class SwiftCountryKitTests: XCTestCase {
     func testExample() throws {
-        let countryKit = CountryProvider()
-        XCTAssertEqual(countryKit.allCallingCodeWithISO.count, 239)
-        XCTAssertEqual(countryKit.allCallingCodes.count, 239)
-        XCTAssertEqual(countryKit.find("US"), "+1")
+        let provider = CountryProvider()
+        XCTAssertEqual(provider.allCountries.count, 239)
+    }
+
+    func testAllCountriesCanConvertImage() throws {
+        let provider = CountryProvider()
+
+        print(provider.allCountries)
+
+        for country in provider.allCountries {
+            XCTAssertNotNil(country.image, "\(country.ISOCode) not have image")
+        }
     }
 }
