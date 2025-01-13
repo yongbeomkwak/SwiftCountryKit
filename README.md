@@ -20,7 +20,7 @@ With a simple API, you can easily retrieve the Calling Code for a specific count
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/yongbeomkwak/SwiftCountryKit.git", from: "1.0.0")
+    .package(url: "https://github.com/yongbeomkwak/SwiftCountryKit.git", from: "1.1.1")
 ]
 ```
 
