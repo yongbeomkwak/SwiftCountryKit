@@ -29,9 +29,9 @@ dependencies: [
 ### Country Structure
 ```swift
 public struct Country {
-    let ISOCode: String
-    let callingCode: String
-    var image: UIImage? // flag image
+    public let ISOCode: String
+    public let callingCode: String
+    public var image: UIImage? // flag image
 }
 ```
 
@@ -42,7 +42,7 @@ import SwiftCountryKit
 let provider = CountryProvider()
 
 
-// Get the Calling Code for a specific country by its ISO code
+// Get the Calling Code for a specific country , default value =  US 
 provider.find("US")
 
 // Get a list of all Country

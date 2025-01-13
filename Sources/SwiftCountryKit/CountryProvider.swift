@@ -4,9 +4,9 @@
 import UIKit
 
 public struct Country {
-    let ISOCode: String
-    let callingCode: String
-    var image: UIImage? {
+    public let ISOCode: String
+    public let callingCode: String
+    public var image: UIImage? {
         return UIImage(named: ISOCode, in: .module, compatibleWith: nil)
     }
 }
