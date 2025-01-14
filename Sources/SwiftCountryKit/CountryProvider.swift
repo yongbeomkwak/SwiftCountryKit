@@ -16,7 +16,7 @@ public struct CountryProvider {
     private var dict: [String : Country] = [:]
 
     public var allCountries: [Country] {
-        return dict.map { Country(ISOCode: $0.key, callingCode: $0.value.callingCode) }
+        return dict.map { Country(ISOCode: $0.key, callingCode: $0.value.callingCode) }.sorted(by: { $0.ISOCode < $1.ISOCode })
     }
 
     public var allCallingCodes: [String] {
