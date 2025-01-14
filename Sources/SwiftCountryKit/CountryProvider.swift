@@ -7,6 +7,9 @@ public struct Country : Sendable {
     public static let `default` = Country(ISOCode: "US", callingCode: "+1")
     public let ISOCode: String
     public let callingCode: String
+    public var name: String {
+        Locale.current.localizedString(forRegionCode: ISOCode) ?? Locale.current.localizedString(forRegionCode: "US")!
+    }
     public var image: UIImage? {
         return UIImage(named: ISOCode, in: .module, compatibleWith: nil)
     }
@@ -16,7 +19,7 @@ public struct CountryProvider {
     private var dict: [String : Country] = [:]
 
     public var allCountries: [Country] {
-        return dict.map { Country(ISOCode: $0.key, callingCode: $0.value.callingCode) }.sorted(by: { $0.ISOCode < $1.ISOCode })
+        return dict.map { Country(ISOCode: $0.key, callingCode: $0.value.callingCode) }.sorted(by: { $0.name < $1.name })
     }
 
     public var allCallingCodes: [String] {
