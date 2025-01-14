@@ -3,15 +3,20 @@
 
 import UIKit
 
-public struct Country : Sendable {
+public struct Country : Sendable, Equatable {
     public static let `default` = Country(ISOCode: "US", callingCode: "+1")
     public let ISOCode: String
     public let callingCode: String
+
     public var name: String {
         Locale.current.localizedString(forRegionCode: ISOCode) ?? Locale.current.localizedString(forRegionCode: "US")!
     }
     public var image: UIImage? {
         return UIImage(named: ISOCode, in: .module, compatibleWith: nil)
+    }
+
+    public static func == (lhs: Self, rhs: Self) -> Bool {
+        return lhs.ISOCode == rhs.ISOCode
     }
 }
 
