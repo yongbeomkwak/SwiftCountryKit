@@ -3,7 +3,8 @@
 
 import UIKit
 
-public struct Country {
+public struct Country : Sendable {
+    public static let `default` = Country(ISOCode: "US", callingCode: "+1")
     public let ISOCode: String
     public let callingCode: String
     public var image: UIImage? {
