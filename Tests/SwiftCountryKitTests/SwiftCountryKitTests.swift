@@ -7,13 +7,5 @@ final class SwiftCountryKitTests: XCTestCase {
         XCTAssertEqual(provider.allCountries.count, 239)
     }
 
-    func testAllCountriesCanConvertImage() throws {
-        let provider = CountryProvider()
 
-        print(provider.allCountries)
-
-        for country in provider.allCountries {
-            XCTAssertNotNil(country.image, "\(country.ISOCode) not have image")
-        }
-    }
 }

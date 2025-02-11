@@ -9,7 +9,7 @@ public struct Country : Sendable, Equatable {
     public let callingCode: String
 
     public var name: String {
-        Locale.current.localizedString(forRegionCode: ISOCode) ?? Locale.current.localizedString(forRegionCode: "US")!
+        (Locale.current.localizedString(forRegionCode: ISOCode) ?? Locale.current.localizedString(forRegionCode: "US")!).lowercased()
     }
     public var image: UIImage? {
         return UIImage(named: ISOCode, in: .module, compatibleWith: nil)
@@ -33,6 +33,13 @@ public struct CountryProvider {
 
     public init() {
         dict = load()
+    }
+
+    public func find(callingCode: String) -> Country? {
+        if callingCode == "+1" {
+            return find("US")
+        }
+        return allCountries.first(where: { $0.callingCode == callingCode })
     }
 
     public func find(_ ISOCode: String) -> Country {
